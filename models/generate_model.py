@@ -70,5 +70,5 @@ print("Finished Training")
 #plt.plot(np.arange(30), losses["train"])
 #plt.plot(np.arange(30), losses["val"])
 
-torch.save(best_model, "alex_bird_classifier")
+torch.save(best_model, "completed_models/alexnet_bird_classifier")
 print("Saved Model")
