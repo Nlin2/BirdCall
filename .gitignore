@@ -1,1 +1,4 @@
 data
+*.ipynb_checkpoints
+__pycache__
+/models/completed_models
