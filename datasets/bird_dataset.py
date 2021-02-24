@@ -30,7 +30,7 @@ class BirdDataset(Dataset):
         # Basic Preprocessing: https://pytorch.org/hub/pytorch_vision_alexnet
         self.transform = transforms.Compose([
             #transforms.Resize(256),
-            transforms.Resize(224), # Want to utilize the full img
+            transforms.Resize((224,224)), # Want to utilize the full img
             transforms.CenterCrop(224),
             transforms.ToTensor(),
             transforms.Normalize([0.485, 0.456, 0.406], # imgNet mean, std
